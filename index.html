@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>morse | talk</title>
+    <link rel="stylesheet" href="css\style.css">
+    <style>
+      textarea{
+        width:80%;
+        height:10vh;
+        display:block;
+        margin:1rem;
+        padding:1rem;
+      }
+      #output{
+        width:80%;
+        height:10vh;
+        margin:1rem;
+        padding:1rem;
+        border:0.1px solid black;
+      }
+      .morse{
+        margin: auto;
+        max-width: 600px;
+      }
+      #button{
+        margin:1rem;
+        padding:0.5rem 0.5rem;
+      }
+      #sentence{
+        margin:1rem;
+      }
+      .about{
+        margin:auto;
+        padding-top:0.5rem;
+      }
+      #heading{
+        color:white;
+        font-size:40px;
+        text-align:center;
+        padding:1rem;
+        font-weight:bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navigation-container">
+      <div id="heading">
+        morse-chat
+      </div>
+    </nav>
+
+    <header class="hero">
+      <img class="hero-img" src="morse-code.gif" alt="">
+
+    </header>
+
+    <div class="morse">
+      <textarea id="textarea" placeholder="give your input here for morse code translation. You can give any words or sentences, it will be in morse code"></textarea>
+      <button id="button">translate</button>
+
+      <div style="font-size:20px" id="sentence">
+        morse code translation goes here 👇...
+      </div>
+
+      <div id="output"></div>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer-header">
+        about
+      </div>
+      <div class="about">
+        do you know that you can communicate Morse Code by blinking and it's a sequences of two different signal durations called dots and dashes or dits and dahs.
+      </div>
+    </footer>
+
+
+    <script src="js\script.js" charset="utf-8"></script>
+
+  </body>
+</html>
